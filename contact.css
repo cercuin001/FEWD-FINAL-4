@@ -7,3 +7,5 @@ body {
 h1 {
     color: whitesmoke;
 }
+#mbox {size: 85px;}
+.contact {justify-content: right;}
