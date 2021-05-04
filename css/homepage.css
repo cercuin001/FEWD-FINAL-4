@@ -5,6 +5,11 @@ body {
     text-align: center;
 }
 
+@font-face {
+    font-family: RaveParty;
+    src: url(fonts/Ravebold.ttf) format("ttf");
+  }
+
 h1 {
     color: whitesmoke;
 }
@@ -20,6 +25,7 @@ li {
 }
 
 #cchead {
+    font-family: RaveParty;
     color:#6495ed;
 }
 
