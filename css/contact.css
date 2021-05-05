@@ -10,3 +10,7 @@ h1 {
 }
 .mbox {height: 52px;width: 120px;padding-left: 90px;}
 div {text-align: center;background:rgb(207, 207, 190); border: white;border-style: groove;border-spacing: 16px;}
+#emailbox {
+    width: 100px;
+    height: 200px;
+}
