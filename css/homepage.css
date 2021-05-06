@@ -28,7 +28,11 @@ li {
     font-family: RaveParty;
     color:#6495ed;
     padding-right: 25%;
-    font-size: 100px;
+    padding-left: 25%;
+    font-size: 75px;
+    align-items: center;
+    text-align: center;
+    display: block;
 }
 
 #whitehead {
@@ -36,6 +40,9 @@ li {
     border-radius: 0px 0px 25px 25px;
     width: 100%;
     height: 100px;
+    align-items: center;
+    text-align: center;
+    display: flex;
 }
 
 #navgrey {

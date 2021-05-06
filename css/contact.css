@@ -13,6 +13,6 @@ h1 {
 }
 #message {height: 100px;}
 div {text-align: center;background: #808080; border:#f7f7e2;border-style: groove;border-spacing: 16px;}
-#cchead {font-family:RaveParty;color:#6495ed;}
+#cchead {display: flex; font-family:RaveParty;color:#6495ed;}
 #whitehead {background-color: #f7f7e2;border-radius: 0px 0px 25px 25px;width: 100%;height: 50px;}
 #contact {background: #272e47;border-style: groove; border:#f7f7e2;}
