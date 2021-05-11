@@ -5,13 +5,28 @@ body {
     text-align: center;
 }
 
+.paragraphtext {
+    margin: auto;
+    max-width: 80%;
+    text-align: justify;
+}
+
 h1 {
     color: #f7f7e2;
 }
 
+img.maskimage {
+width: 390px;
+height: 400px;
+}
+img.plasticsheilds{
+width: 400px;
+height: 300px;
+padding-left: 75px; 
+}
 ol {
 text-align: left;
 }
 ul {
-text-align: left;
+text-align: center;
 }
