@@ -2,7 +2,7 @@ body {
     background-color: #6495ed;
     font: #312f21 100px;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+   
 }
 
 @font-face {
@@ -12,16 +12,19 @@ body {
 
 h1 {
     color: whitesmoke;
+    text-align: center;
 }
 
 .nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 } 
 
 li {
     display: inline;
+    text-align: center;
 }
 
 #cchead {
@@ -57,4 +60,36 @@ li {
     background-color: #808080;
     padding: 5px;
     border-radius: 10px;
+}
+
+.image1 {
+
+    border-style: groove;
+    border-width:medium;
+    width: fit-content;
+}
+
+
+
+table {
+    width:fit-content;
+    text-align: left;
+    
+}
+
+table, td{
+border: 2px solid rgb(247, 246, 250);
+border-collapse: collapse;
+}
+
+td {
+    color: rgb(0, 0, 0);
+}
+
+
+thead {
+
+background-color: rgb(246, 248, 250);
+color: rgb(10, 10, 10);
+
 }
