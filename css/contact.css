@@ -19,11 +19,11 @@ body {background-color: #6495ed;font: #312f21 100px;font-family: Arial, Helvetic
 
 h1 {color: whitesmoke;text-decoration: underline;}
 
-.nav {list-style-type: none;margin: 0;padding: 0;} 
+.nav {list-style-type: none;margin: 0;padding: 0;display: flex;} 
 
-li {display: inline;}
+li {display:inline-flex;width:100%;justify-content: flex-start;align-content: center;}
 
-#cchead {font-family: RaveParty;color:#6495ed;padding-right: 25%;padding-left: 25%;font-size: 75px;align-items: center;text-align: center;display: block;}
+#cchead {font-family: RaveParty;color:#6495ed;padding-left: 0.25%;font-size: 75px;}
 
 #whitehead {background-color: #f7f7e2;border-radius: 0px 0px 25px 25px;width: 100%;height: 100px;align-items: center;text-align: center;display: flex;}
 
