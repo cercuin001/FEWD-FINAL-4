@@ -62,14 +62,22 @@ li {
     border-radius: 10px;
 }
 
-.image1 {
+
+img {
 
     border-style: groove;
-    border-width:medium;
-    width: fit-content;
+    border-width: 10px;
+    width: 300px;
+    height: 200px;
+    margin-left: 20px;
 }
 
+#floatation {
 
+    display: flex;
+    justify-content: right;
+
+}
 
 table {
     width:fit-content;
@@ -93,3 +101,10 @@ background-color: rgb(246, 248, 250);
 color: rgb(10, 10, 10);
 
 }
+
+h2 {
+   color: whitesmoke;
+}
+
+
+   
