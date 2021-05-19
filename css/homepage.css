@@ -9,17 +9,11 @@ body {
     font-family: RaveParty;
     src: url(fonts/Ravebold.ttf) format("ttf");
   }
+@import url(fonts/Ravebold.ttf);
 
 h1 {
     color: #f7f7e2;
 }
-
-.nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-} 
 
 li {
     display: inline-flex;
@@ -40,13 +34,13 @@ li {
     font-family: RaveParty;
     color:#6495ed;
     font-size: 75px;
-    padding-left: 0.25%;
     position: absolute;
     transition: 0.5s;
     animation-duration: 2.5s;
     animation-name: cchead;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    padding-left: 0.2%;
 }
 
 #cchead:hover {
@@ -71,9 +65,25 @@ li {
     height: 100px;
     align-items: center;
     justify-content: flex-start;
-    text-align: center;
+    display: flex;
+    overflow: auto;
+}
+
+.headbox {
+    white-space: nowrap;
     display: flex;
 }
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+} 
 
 .navblue {
     color: #6495ed;
@@ -144,46 +154,36 @@ li {
     transition: 0.25s;
 }
 
-#scrolltext {
-    color: #312f21;
-    font-family: RaveParty;
-    font-size: 200px;
+.marquee {
+    width: 100%;
     line-height: 100%;
     white-space: nowrap;
     overflow: hidden;
-    display: flex;
-    right: 100%;
-    width: 100%;
-    height: 100vh;
-    animation: scrolling 5s linear infinite;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+}
+
+.scrolltext {
+    color: #312f21;
+    font-family: RaveParty;
+    font-size: 200px;
     transition: 0.5s;
 }
 
-#scrolltext2 {
-    animation-delay: 2.5s;
-}
-
-#scrolltext:hover {
+.scrolltext:hover {
     color: #312f2135;
     transition: 0.5s;
 }
 
-@keyframes scrolling {
-    0%
-    {
-        transform: translateX(0)
-    }
-    100%
-    {
-        transform: translateX(-50%)
-    }
+.marquee .scrolltext {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 30s linear infinite;
 }
 
-#scrollsec {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    overflow: hidden;
+@keyframes marquee {
+    0% {transform: translateX(0);}
+    100%{transform: translateX(-100%);}
 }
 
