@@ -3,6 +3,16 @@ body {
     font: #312f21 100px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin: 0;
+}
+
+#content {
+    position: relative;
+    overflow-x: hidden;
+    margin-left: 0.67em;
+    margin-right: 0.67em;
+    margin-top: 0;
+    margin-bottom: 0.67em;
 }
 
 @font-face {
@@ -26,21 +36,32 @@ li {
     font-family: RaveParty;
     color:#6495ed;
     font-size: 75px;
-    padding-left: 0.25%;
+    display: inline;
     position: absolute;
+    padding-right: 45%;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+#cchead1:hover {
+    color:#f7f7e2;
+    filter: blur(1rem);
+    transition: 0.25s;
 }
 
 #cchead {
     font-family: RaveParty;
     color:#6495ed;
     font-size: 75px;
-    position: absolute;
     transition: 0.5s;
     animation-duration: 2.5s;
     animation-name: cchead;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    padding-left: 0.2%;
+    display: inline;
+    position: absolute;
+    padding-right: 45%;
+    cursor: pointer;
 }
 
 #cchead:hover {
@@ -63,22 +84,27 @@ li {
     border-radius: 0px 0px 25px 25px;
     width: 100%;
     height: 100px;
-    align-items: center;
-    justify-content: flex-start;
     display: flex;
-    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: hidden;
 }
 
 .headbox {
     white-space: nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     display: flex;
+    overflow-x: hidden;
 }
 
 .nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    white-space: nowrap;
+    white-space: normal;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,21 +185,19 @@ li {
     line-height: 100%;
     white-space: nowrap;
     overflow: hidden;
-    box-sizing: border-box;
+    text-overflow: clip;
     position: fixed;
+    box-sizing: border-box;
     bottom: 0;
+    pointer-events: none;
 }
 
 .scrolltext {
-    color: #312f21;
+    color: #312f2190;
     font-family: RaveParty;
     font-size: 200px;
     transition: 0.5s;
-}
-
-.scrolltext:hover {
-    color: #312f2135;
-    transition: 0.5s;
+    pointer-events: none;
 }
 
 .marquee .scrolltext {
@@ -186,4 +210,27 @@ li {
     0% {transform: translateX(0);}
     100%{transform: translateX(-100%);}
 }
+
+.adbox {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #808080;
+    position: relative;
+    margin: 5% auto;
+    border-radius: 20px 5px 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+/*CAROUSEL*/
+
+
+
+
+
 
