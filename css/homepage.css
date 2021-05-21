@@ -61,7 +61,7 @@ li {
   }
 
 #cchead1 {
-    font-family: RaveParty;
+    font-family: 'RaveParty', Arial, Helvetica, sans-serif;
     color:#6495ed;
     font-size: 75px;
     position: absolute;
@@ -84,7 +84,7 @@ li {
 }
 
 #cchead {
-    font-family: RaveParty;
+    font-family: 'RaveParty', Arial, Helvetica, sans-serif;
     color:#6495ed;
     font-size: 75px;
     transition: 0.5s;
@@ -261,7 +261,7 @@ li {
 
 .scrolltext {
     color: #312f2190;
-    font-family: RaveParty;
+    font-family: 'RaveParty', Arial, Helvetica, sans-serif;
     font-size: 200px;
     transition: 0.5s;
     pointer-events: none;
