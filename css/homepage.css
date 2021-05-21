@@ -25,10 +25,13 @@ html, body {
 }
 
 @font-face {
-    font-family: RaveParty;
-    src: url(fonts/Ravebold.ttf) format("ttf");
+    font-family: 'RaveParty';
+    src: url('/fonts/Ravebold.ttf') format('truetype'),
+         url('/fonts/RavePartyBold.eot') format('embedded-opentype'),
+         url('/fonts/RavePartyBold.woff') format('woff'),
+         url('/fonts/RavePartyBold.woff2') format('woff2');
   }
-@import url(fonts/Ravebold.ttf);
+@import url('/fonts/Ravebold.ttf');
 
 h1 {
     color: #f7f7e2;
