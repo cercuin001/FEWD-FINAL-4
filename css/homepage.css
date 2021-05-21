@@ -593,14 +593,14 @@ li {
   .carousel::before {
     font-weight: bold;
     color: #f7f7e2;
-    content: "&#129172;";
+    content: "\1F894";
     font-size: 8em;
   }
   
   .carousel::after {
     font-weight: bold;
     color: #f7f7e2;
-    content: "&#129174;";
+    content: "\1F896";
     font-size: 8em;
   }
 
