@@ -33,6 +33,59 @@
 <br>
 <h2>covercorps© M.A.S.C</h2>
 
+<div class="threejsobject">
+    <script src="../libraries/three.min.js"></script>
+    <script src="../libraries/GLTFLoader.js"></script>
+    <script src="../libraries/OrbitControls.js"></script>
+    <script>
+      let scene, camera, renderer;
+      function init() {
+        scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xdddddd);
+        camera = new THREE.PerspectiveCamera(40,window.innerWidth/window.innerHeight,1,5000);
+        camera.rotation.y = 45/180*Math.PI;
+        camera.position.x = 800;
+        camera.position.y = 100;
+        camera.position.z = 1000;
+        controls = new THREE.OrbitControls(camera);
+        controls.addEventListener('change', renderer);
+        hlight = new THREE.AmbientLight (0x404040,100);
+        scene.add(hlight);
+        directionalLight = new THREE.DirectionalLight(0xffffff,100);
+        directionalLight.position.set(0,1,0);
+        directionalLight.castShadow = true;
+        scene.add(directionalLight);
+        light = new THREE.PointLight(0xc4c4c4,10);
+        light.position.set(0,300,500);
+        scene.add(light);
+        light2 = new THREE.PointLight(0xc4c4c4,10);
+        light2.position.set(500,100,0);
+        scene.add(light2);
+        light3 = new THREE.PointLight(0xc4c4c4,10);
+        light3.position.set(0,100,-500);
+        scene.add(light3);
+        light4 = new THREE.PointLight(0xc4c4c4,10);
+        light4.position.set(-500,300,500);
+        scene.add(light4);
+        renderer = new THREE.WebGLRenderer({antialias:true});
+        renderer.setSize(window.innerWidth,window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+        let loader = new THREE.GLTFLoader();
+        loader.load("../3d/mask1.gltf", function(gltf){
+          mask = gltf.scene.children[0];
+          mask.scale.set(0.5,0.5,0.5);
+          scene.add(gltf.scene);
+          animate();
+        });
+      }
+      function animate() {
+        renderer.render(scene,camera);
+        requestAnimationFrame(animate);
+      }
+      init();
+    </script>
+</div>
+
 <img src="img/mask1b.png" width="300px" height="400px" style="float: left;"> 
 
 <p style="text-align: justify;"><b>M.A.S.C is a top-of-the-line wearable air purifing mask that can be used for daily use. It’s electric filtering technology provides hours of air filtration with the same technology that is used in high-end air purifiers. M.A.S.C consist of dual fans and a respiratory sensor that detects the volume of the wearers breathe. It has H13 level HEPA filters and has rechargeable batteries that offers up to 10 hours of clean filtered air per use. What makes M.A.S.C so outstanding and different from the rest, it has solar power technology which enables it to charge itself, WOW!! M.A.S.C also offers a UV light that self sanitizes and kills germs on contact. M.A.S.C includes: 20 replaceable H13 HEPA Filters, a carrying pouch, neck lanyards, a USB cable for charging, a dual fan system, a respiratory sensor, a washable face guard, and a feeding tube.</b></p> 
