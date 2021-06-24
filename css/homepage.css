@@ -25,15 +25,11 @@ html, body {
 }
 
 @font-face {
-    font-family: "RaveParty";
-    src: url("/fonts/RavePartyBold.eot") format("embedded-opentype");
-    src: url("/fonts/Ravebold.ttf") format("truetype"),
-         url("/fonts/RavePartyBold.eot") format("embedded-opentype"),
-         url("/fonts/RavePartyBold.woff") format("woff"),
-         url("/fonts/RavePartyBold.woff2") format("woff2");
-         font-display: block;
-         font-weight: normal;
-         font-style: normal;
+    font-family: 'RaveParty';
+    src: url("../fonts/RavePartyBold.eot") format("embedded-opentype"),
+         url("../fonts/Ravebold.ttf") format("truetype"),
+         url("../fonts/RavePartyBold.woff") format("woff"),
+         url("../fonts/RavePartyBold.woff2") format("woff2");
   }
 
 h1 {
